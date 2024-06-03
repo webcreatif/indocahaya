@@ -1,0 +1,384 @@
+::-webkit-scrollbar {
+    display:none;
+}
+[onclick] {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 50%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    background-color: var(--color-theme-light1);
+    background-color: #EDEFF0;
+    border-color: var(--color-theme-light2);
+    border-color: #E6E6E6;
+}
+
+#header{
+    min-height:70px;
+    background-color:white;
+    border-bottom:1px solid #E6E6E6;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1;
+    -webkit-transition: background 2s; /* For Safari 3.1 to 6.0 */
+    transition: background 2s;
+    transition: all 0.3s linear;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    width:100% !important;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#header.bg-color-black{
+    background: white;
+}
+#header>div:first-child{
+    background: #3ac453;
+    height:12px;
+    width:100%;
+}
+#header>div:nth-child(2){
+    margin: auto;
+    padding:20px 20px 20px 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#header>div:nth-child(2)>div:first-child>h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin:0px;
+}
+
+.menu-style1>a{
+    font-size: 1.8em;
+    padding:0px 10px 7px 15px ;
+    color:#3ac453;
+    font-weight: 600;
+}
+.menu-style1>a:hover, .menu-style2>a:hover{
+    border-bottom: 1px solid #3ac453;
+    font-weight: 600;
+}
+.menu-style2{
+    width: 100%;
+    display: none;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+.menu-style2>a{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 1.6em;
+    padding:12px 20px;
+    color: #3ac453;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.menu-style1{
+    display: none;
+}
+
+#menu{
+    right: 0px;
+    top: 0px;
+    color:white !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-image-cover-style{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    background-image: url('http://www.indocahayaenergi.com/gambar5.jpeg');
+    margin-top: 56px;
+}
+.bg-image-cover-style>div{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(64, 64, 64, 0) 20%,rgba(64, 64, 64, 0) 90%,rgba(0,0,0,0.4) 100%);
+}
+
+.bg-image-cover-style>div>div{
+    max-width: 1024px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    height: 500px;
+}
+
+.bg-image-cover-style>div>div>div{
+    max-width: 300px;
+}
+
+.bg-image-cover-style>div>div>div>div{
+    -webkit-text-stroke:3px rgba(0,0,0,0.09);
+    color: white;
+    text-shadow:2px 2px 4px #000000;
+    padding:60px 20px 60px 20px;
+    font: 36px 'Roboto', sans-serif;
+}
+
+.content1{
+    min-width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding-top:80px;
+    padding-bottom:80px;
+    background-color: white;
+}
+
+.content1>div{
+    max-width: 1024px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 16px 25px 16px;
+}
+.content1>div>h1{
+  font:500 30px 'Arial';
+  color:#191919;
+  font-weight: 600;
+}
+.content1>div>h3{
+    font:400 18px 'Open Sans';
+    color:#737373;
+}
+.content1>div>img{
+    height:30%;
+    width:80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-part{
+    margin:5px;
+    text-align: center;
+}
+
+.content-part>div{
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+    background-color: white;
+    text-align: center;
+    min-width:270px;
+    max-width:270px;
+    padding:10px;
+    margin:15px;
+    margin-left:auto;
+}
+.content-part>div>img{
+    max-width: 22%;
+    min-width:110px !important;
+    min-height:110px !important;
+}
+
+.content-part>div>div>div:first-child{
+    font:500 24px 'Open Sans';
+    color: white;
+    background: #3ac453;
+}
+
+.content-part>div>div>div:nth-child(2){
+    font:500 16px 'Open Sans';
+    color:#737373;
+    border: 1px solid gainsboro;
+    padding: 10px 10px;
+    text-align: left;
+    background: #f5f8f2;
+}
+
+#parallaxa{
+    height:70%;
+    background-position-x: 40%;
+    background-size:200% !important;
+    min-width: 100%;
+    max-width: 100%;
+    background-image: url('http://www.indocahayaenergi.com/gambar3.jpeg') !important;
+    background-repeat: no-repeat;
+}
+#parallaxa>div{
+    background-color: RGBA(0,0,0,0.4);
+    height:70%;
+}
+
+#parallaxa>div>div{
+    text-align:center;
+    color:white;
+    padding-top:100px !important;
+    padding-bottom: 100px !important;
+}
+
+#parallaxa>div>div>h3{
+    font:400 29px 'Open Sans';
+}
+
+.icon-bars>img{
+    height: 25px;
+    width: auto;
+}
+
+
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  font: 500 17px 'Arial';
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  float: left;
+  font-weight: 400;
+}
+/*baru keatas*/
+
+.payment{
+    text-align: left;
+    margin-right: 6%;
+    margin-left: 6%;
+    background:#f5f8f2;
+    padding: 20px;
+}
+
+.partner>ul>li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.payment>ol>li{
+    margin-top:20px;
+}
+
+.team{
+    margin-top:55px;
+}
+.team>div{
+    background: #CFDDBD;
+    padding: 12px;
+    margin-top: 15px;
+    font: 400 16px 'Open Sans';
+    color: #333333;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    min-width: 120px;
+}
+.team>div>div{
+    background-color: #ECF2E1;
+    padding: 5px;
+    justify-content: center;
+}
+
+.img-team{
+    height: 150px;
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+.contact{
+    font-size: 18px;
+    line-height: 24px;
+    margin:20px;
+    padding-left: 10%;
+    font: 700 20px 'Open Sans';
+    margin: 50px 0px;
+}
+.contact>div{
+   padding-top:20px; 
+   font: 500 16px 'Open Sans';
+}
+.contact>div>div>i{
+    margin-right:8px;
+}
+
+/*//////*/
+
+
+a{
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+
+a:hover
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+@media screen and  (min-width: 640px){
+    .content-part>div{
+        max-width: 22%;
+    }
+
+    .content-part>div>img{
+        max-width: 22%;
+    }
+
+    #parallaxa{
+        height:10%;
+        min-height: 330px;
+        background-size:100% !important;
+    }
+    #parallaxa>div{
+        background-color: RGBA(0,0,0,0.4);
+        height:100%;
+        min-height: 330px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .content1>div{
+        padding: 10px 16px 25px 16px;
+    }
+
+    .content-part>div>img{
+        max-width: 60%;
+    }
+
+    .menu-style1{
+        display: block;
+    }
+    .icon-bars{
+        display: none;
+    }
+
+}
+

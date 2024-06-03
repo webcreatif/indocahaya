@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <title>PT Indo Cahaya Energi Internasional</title>
+    <meta name="keywords" content="PT Indo Cahaya Energi Internasional">
+    <meta name="description" content="PT Indo Cahaya Energi Internasional">
+    <meta property="og:url" content="http://www.indocahayaenergi.com/">
+    <meta property="og:title" content="PT Indo Cahaya Energi Internasional">
+    <meta property="og:description" content="PT Indo Cahaya Energi Internasional">
+    <meta property="og:site_name" content="PT Indo Cahaya Energi Internasional">
+</head>
+<body>
+    <div id="header">
+      <div></div>
+      <div>
+        <div><h1>PT. INDO CAHAYA ENERGI INTERNASIONAL</h1></div>
+        <div class="icon-bars">
+            <img src="http://indocahayaenergi.com/icon.JPG" onclick="toggleMenu(event)">
+        </div>
+        <div class="menu-style1">
+            <a href="index.html">HOME</a>
+            <a href="team.html">OUR MANAGEMENT TEAM</a>
+            <a href="payment.html">PAYMENT OPTIONS</a>
+            <a href="partner.html">OUR PARTNER</a>
+            <a href="media.html">MEDIA</a>
+        </div>
+    </div>
+    <div class="menu-style2" id="menu">
+        <a href="index.html">HOME</a>
+        <a href="team.html">OUR MANAGEMENT TEAM</a>
+        <a href="payment.html">PAYMENT OPTIONS</a>
+        <a href="partner.html">OUR PARTNER</a>
+        <a href="media.html">MEDIA</a>
+    </div>                
+</div>
+
+<div class="content1">
+    <div>
+        <h1>Our Management Team</h1>
+        <h3>The management is comprised of a small team whose each member has at least 20 years of expertise in his area</h3>
+        <div class="team">
+           <div><div><b>Commissioner</b></div><div>Edward Hutabarat</div></div>
+           <div><div><b>President Director</b></div><div>Yohanes Handoyo</div></div>
+           <div><div><b>Directors</b></div><div>Hardiman Setyabudi</div></div>
+           <div><div><b>Managers </b></div><div>5 + Manager</div></div>
+       </div>
+   </div>
+
+   <div class="content-part">
+    <div style="min-height:0px;">
+        <div>
+           <img class="img-team" src="http://indocahayaenergi.com/gambar1.jpeg" alt="team picture"> 
+       </div>
+   </div>
+   <div>
+    <div>
+        <img class="img-team" src="http://indocahayaenergi.com/gambar2.jpeg" alt="team picture"> 
+    </div>
+</div>
+<div>
+    <div>
+        <img class="img-team" src="http://indocahayaenergi.com/gambar3.jpeg" alt="team picture"> 
+    </div>
+</div>
+</div>
+</div>
+
+<div class="footer">Copyright @ 2017 PT. Indo Cahaya Energi Internasional</div>
+
+<script>
+  function toggleMenu(e) {
+    e.stopPropagation();
+    var scroll = $(window).scrollTop();
+
+    if ($("#menu").css("display") == "none") {
+        $("#header").addClass("bg-color-black");
+    } else {
+        $("#header").removeClass("bg-color-black");
+    }
+
+    $('#menu').slideToggle();
+}
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 30) {
+        $("#header").addClass("bg-color-black");
+    } else {
+        if ($("#menu").css("display") == "none") {
+            $("#header").removeClass("bg-color-black");
+
+        }
+    }
+
+});
+$("body").on("click", function () {
+    event.stopPropagation();
+    $('#menu').slideUp();
+});
+
+</script>
+</body>
+</html>

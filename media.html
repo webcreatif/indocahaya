@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <title>PT Indo Cahaya Energi Internasional</title>
+    <meta name="keywords" content="PT Indo Cahaya Energi Internasional">
+    <meta name="description" content="PT Indo Cahaya Energi Internasional">
+    <meta property="og:url" content="http://www.indocahayaenergi.com/">
+    <meta property="og:title" content="PT Indo Cahaya Energi Internasional">
+    <meta property="og:description" content="PT Indo Cahaya Energi Internasional">
+    <meta property="og:site_name" content="PT Indo Cahaya Energi Internasional">
+</head>
+
+<body>
+    <div id="header">
+      <div></div>
+      <div>
+         <div><h1>PT. INDO CAHAYA ENERGI INTERNASIONAL</h1></div>
+         <div class="icon-bars">
+            <img src="http://indocahayaenergi.com/icon.JPG" onclick="toggleMenu(event)">
+        </div>
+        <div class="menu-style1">
+            <a href="index.html">HOME</a>
+            <a href="team.html">OUR MANAGEMENT TEAM</a>
+            <a href="payment.html">PAYMENT OPTIONS</a>
+            <a href="partner.html">OUR PARTNER</a>
+            <a href="media.html">MEDIA</a>
+        </div>
+    </div>
+    <div class="menu-style2" id="menu">
+        <a href="index.html">HOME</a>
+        <a href="team.html">OUR MANAGEMENT TEAM</a>
+        <a href="payment.html">PAYMENT OPTIONS</a>
+        <a href="partner.html">OUR PARTNER</a>
+        <a href="media.html">MEDIA</a>
+    </div>                
+</div>
+
+
+<div class="content1">
+    <div>
+        <h1>Deed of Establishment </h1>
+        <h3>Issued by The Minister of Justice</h3>
+        <img src="http://indocahayaenergi.com/akta.png" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/akta2.png" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/akta3.png" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/akta4.png" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/akta5.png" alt="Port Loading">
+
+        <h1>Certificate of Domicile</h1>
+        <h3>Issued by Pamulang Districts</h3>
+        <img src="http://indocahayaenergi.com/domisili.png" alt="Port Loading"> 
+        
+        <h1>License of Trading Business</h1>
+        <h3>Issued by Trade Departement</h3>
+        <img src="http://indocahayaenergi.com/iup.png" alt="Port Loading"> 
+        
+        <h1>Ministry of Justice and Human Rights Decree</h1>
+        <h3>Issued by Ministry of Justice and Human Rights</h3>
+        <img src="http://indocahayaenergi.com/ham.png" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/ham2.png" alt="Port Loading"> 
+        
+        <h1>Certificate of Clear and Clean</h1>
+        <h3>Issued by Director General of Minerals and Coal</h3>
+        <img src="http://indocahayaenergi.com/sertifikat.JPG" alt="Port Loading"> 
+        
+        <h1>Exit Permit </h1>
+        <h3>Issued by Tax Departement</h3>
+        <img src="http://indocahayaenergi.com/izin_usaha.jpg" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/izin_usaha3.JPG" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/izin_usaha4.JPG" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/izin_usaha5.JPG" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/izin_usaha6.JPG" alt="Port Loading"> 
+        
+        <h1>Report Of Analysis </h1>
+        <h3>Issued by Laboratory Departement</h3>
+        <img src="http://indocahayaenergi.com/izin_usaha7.JPG" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/report_analyzis.JPG" alt="Port Loading"> 
+        <img src="http://indocahayaenergi.com/report_analysis.JPG" alt="Port Loading"> 
+    </div>
+</div>
+
+<div class="footer">Copyright @ 2017 PT. Indo Cahaya Energi Internasional</div>
+
+
+<script>
+ function toggleMenu(e) {
+    e.stopPropagation();
+    var scroll = $(window).scrollTop();
+
+    if ($("#menu").css("display") == "none") {
+        $("#header").addClass("bg-color-black");
+    } else {
+        $("#header").removeClass("bg-color-black");
+    }
+
+    $('#menu').slideToggle();
+}
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 30) {
+        $("#header").addClass("bg-color-black");
+    } else {
+        if ($("#menu").css("display") == "none") {
+            $("#header").removeClass("bg-color-black");
+
+        }
+    }
+
+});
+$("body").on("click", function () {
+    event.stopPropagation();
+    $('#menu').slideUp();
+});
+
+</script>
+</body>
+</html>
